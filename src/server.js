@@ -19,8 +19,10 @@ console.log(publicFolderPath);
 server.use(express.static(publicFolderPath));
 server.use(cors());
 server.use(express.json());
-//server.use("/products", productsRouter);
+
 server.use("/reviews", reviewsRouter);
+server.use("/products", productsRouter);
+
 
 //Call diffrent error handlers for diffrent errors
 server.use(notFoundHandler);
