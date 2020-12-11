@@ -5,8 +5,8 @@ const { join } = require("path");
 //Import cors
 const cors = require("cors");
 //Import routers
-const productsRouter = require("./services/products");
-const reviewsRouter = require("./services/reviews");
+const productsRouter = require("./products");
+const reviewsRouter = require("./reviews");
 //import error handler
 const { notFoundHandler, unauthorizedHandler, forbiddenHandler, badRequestHandler, catchAllHandler } = require("./errorHandling");
 //use server handling library
@@ -19,8 +19,8 @@ console.log(publicFolderPath);
 server.use(express.static(publicFolderPath));
 server.use(cors());
 server.use(express.json());
-server.use("/products", productsRouter);
-server.use("/:id/reviews", reviewsRouter);
+//server.use("/products", productsRouter);
+server.use("/reviews", reviewsRouter);
 
 //Call diffrent error handlers for diffrent errors
 server.use(notFoundHandler);
