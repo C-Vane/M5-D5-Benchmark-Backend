@@ -6,7 +6,7 @@ const uniqid = require("uniqid");
 const { check, validationResult } = require("express-validator");
 const router = express.Router();
 
-router.use("/:id/uploadPhoto", uploadRoutes);
+router.use("/", uploadRoutes);
 const productFilePath = path.join(__dirname, "products.json"); //GETTING FILEPATH TO JSON
 
 router.get("/", async (req, res, next) => {
