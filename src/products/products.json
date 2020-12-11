@@ -1,1 +1,23 @@
-[{"ID":"product"},{"Name":"abc","Description":"aasssss","brand":"aaaaaaa","price":100,"ID":"3xakhdokik8vzht","CreationDate":"2020-12-11T12:26:56.752Z"},{"Name":"abeec","Description":"aasssss","brand":"aaaaaaa","price":999,"ID":"3xak75wkik8wiw0","CreationDate":"2020-12-11T12:27:21.887Z"},{"Name":"aaa","Description":"aaaaa","brand":"aaaa","price":"aaaaabbbbb","ID":"3xak3fwkik3u2hb","CreationDate":"2020-12-11T10:05:29.230Z","image":"http://localhost:3001/img/3xak3fwkik3u2hb.png"}]
+[
+  {
+    "name": "aaa",
+    "description": "aaaaa",
+    "brand": "yeet",
+    "price": 600,
+    "category": "Electronics",
+    "ID": "3xakhdokik8vzht",
+    "CreationDate": "2020-12-11T10:05:29.230Z",
+    "image": "http://localhost:3001/img/3xak3fwkik3u2hb.png",
+    "modifiedDate": "2020-12-11T14:35:24.990Z"
+  },
+  {
+    "name": "Smelly Couch",
+    "description": "aaaaayeeeeeet",
+    "brand": "gonzo",
+    "price": 666,
+    "category": "Home Stuff",
+    "ID": "3xakhdkkikdr67s",
+    "CreationDate": "2020-12-11T14:43:10.263Z",
+    "image": "http://localhost:3001/img/3xakhdkkikdr67s.png"
+  }
+]
