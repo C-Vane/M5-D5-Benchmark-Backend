@@ -30,13 +30,8 @@ router.get("/:id", async (req, res, next) => {
 //POST reviews
 router.post(
   "/:id",
-  [
-    check("comment").exists().withMessage("Add a comment please!"),
-    check("rate").isInt({ gt: 1, lt: 6 }).withMessage("Rate should be from 1-5").exists.apply("Add a rating Please!"),
-    check("elementId").exists.apply("The product ID is missing"),
-  ],
+  [check("comment").exists().withMessage("Add a comment please!"), check("rate").isInt({ gt: 1, lt: 6 }).withMessage("Rate should be from 1-5").exists.apply("Add a rating Please!")],
   async (req, res, next) => {
-    console.log(req.body.elementId);
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
@@ -68,11 +63,7 @@ router.post(
 
 router.put(
   "/:prodid/:id",
-  [
-    check("comment").exists().withMessage("Add a comment please!"),
-    check("rate").isInt({ gt: 1, lt: 6 }).withMessage("Rate should be from 1-5").exists.apply("Add a rating Please!"),
-    check("elementId").exists.apply("The product ID is missing"),
-  ],
+  [check("comment").exists().withMessage("Add a comment please!"), check("rate").isInt({ gt: 1, lt: 6 }).withMessage("Rate should be from 1-5").exists.apply("Add a rating Please!")],
   async (req, res, next) => {
     try {
       const errors = validationResult(req);
