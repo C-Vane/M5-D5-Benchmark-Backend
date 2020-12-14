@@ -7,6 +7,7 @@ const cors = require("cors");
 //Import routers
 const productsRouter = require("./products");
 const reviewsRouter = require("./reviews");
+const cartsRouter = require("./carts");
 //import error handler
 const { notFoundHandler, unauthorizedHandler, forbiddenHandler, badRequestHandler, catchAllHandler } = require("./errorHandling");
 //use server handling library
@@ -22,7 +23,7 @@ server.use(express.json());
 
 server.use("/reviews", reviewsRouter);
 server.use("/products", productsRouter);
-
+server.use("/carts", cartsRouter);
 
 //Call diffrent error handlers for diffrent errors
 server.use(notFoundHandler);
