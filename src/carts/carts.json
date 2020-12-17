@@ -1,1 +1,50 @@
-[{"_id":"5f6b1991df85440017160811","ownerId":"5f6b1991df8544001716080f","name":"Diego","surname":"Banovaz","products":[{"name":"Test ","descriptoin":"Test product","ID":"nzojp3zwkikfwewi","price":"300","addedDate":"2020-12-14T17:51:37.679Z"},{"name":"Test ","descriptoin":"Test product","ID":"nzojp418kikfwhxa","price":"300","addedDate":"2020-12-14T17:51:43.243Z"},{"name":"Smelly Couch","descriptoin":"aaaaayeeeeeet","ID":"3xakhdkkikdr67s","price":666,"image":"http://localhost:3001/img/3xakhdkkikdr67s.png","addedDate":"2020-12-14T17:52:04.022Z"}],"total":1266},{"_id":"5f6b1991df85440017160812","ownerId":"5f6b1991df8544001716080g","name":"Stefano","surname":"Casasola","products":[],"total":0},{"_id":"5f6b1991df85440017160813","ownerId":"5f6b1991df8544001716080h","name":"Stefano","surname":"Miceli","products":[],"total":0},{"_id":"5f6b1991df85440017160814","ownerId":"5f6b1991df8544001716080i","name":"Riccardo","surname":"Gulin","products":[],"total":0}]
+[
+    {
+        "_id": "5f6b1991df85440017160811",
+        "ownerId": "5f6b1991df8544001716080f",
+        "name": "Diego",
+        "surname": "Banovaz",
+        "products": [
+            {
+                "name": "Smelly Couch",
+                "descriptoin": "aaaaayeeeeeet",
+                "ID": "3xakhdkkikdr67s",
+                "price": 666,
+                "image": "http://localhost:3001/img/3xakhdkkikdr67s.png",
+                "addedDate": "2020-12-14T17:52:04.022Z"
+            },
+            {
+                "name": "Test ",
+                "descriptoin": "Test product",
+                "ID": "nzojp3zwkikfwewi",
+                "price": "300",
+                "addedDate": "2020-12-14T19:23:30.112Z"
+            }
+        ],
+        "total": 966
+    },
+    {
+        "_id": "5f6b1991df85440017160812",
+        "ownerId": "5f6b1991df8544001716080g",
+        "name": "Stefano",
+        "surname": "Casasola",
+        "products": [],
+        "total": 0
+    },
+    {
+        "_id": "5f6b1991df85440017160813",
+        "ownerId": "5f6b1991df8544001716080h",
+        "name": "Stefano",
+        "surname": "Miceli",
+        "products": [],
+        "total": 0
+    },
+    {
+        "_id": "5f6b1991df85440017160814",
+        "ownerId": "5f6b1991df8544001716080i",
+        "name": "Riccardo",
+        "surname": "Gulin",
+        "products": [],
+        "total": 0
+    }
+]
